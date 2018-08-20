@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="rootGridPane" prefHeight="425.0" style="-fx-background-color: #B9F7F0;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sliet.connectfour.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="40.0" GridPane.columnSpan="2" />
+        <Pane fx:id="insertedDiscPane" layoutX="10.0" layoutY="10.0" prefHeight="408.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></Pane>
+        <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <TextField fx:id="playerOneName" promptText="Enter Player One Name">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="35.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="playerTwoName" layoutX="10.0" layoutY="10.0" promptText="Enter Player Two Name">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                    </VBox.margin>
+                </TextField>
+                <Button fx:id="setNameButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="306.0" text="Set Names">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Button>
+                <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="30.0" prefWidth="321.0" text="Player One" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="70.0" />
+                    </VBox.margin>
+                </Label>
+                <Label alignment="CENTER" layoutX="10.0" layoutY="85.0" prefHeight="17.0" prefWidth="300.0" text="Turn" textFill="WHITE">
+                    <font>
+                        <Font name="System Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Region />
+            </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+        </VBox>
+    </children>
+</GridPane>
